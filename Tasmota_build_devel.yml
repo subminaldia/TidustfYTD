@@ -22,15 +22,6 @@ jobs:
       matrix:
         variant:
           - tasmota
-          - tasmota4M
-          - tasmota-minimal
-          - tasmota-display
-          - tasmota-ir
-          - tasmota-knx
-          - tasmota-lite
-          - tasmota-sensors
-          - tasmota-zbbridge
-          - tasmota-zigbee
           - tasmota32
           - tasmota32-zbbrdgpro
           - tasmota32-webcam
@@ -116,7 +107,6 @@ jobs:
         [ ! -f ./mv_firmware/firmware/tasmota4M.* ] || mv ./mv_firmware/firmware/tasmota4M.* ./firmware/tasmota/
         [ ! -f ./mv_firmware/firmware/tasmota-sensors.* ] || mv ./mv_firmware/firmware/tasmota-sensors.* ./firmware/tasmota/
         [ ! -f ./mv_firmware/firmware/tasmota-minimal.bin.gz ] || mv ./mv_firmware/firmware/tasmota-minimal.bin.gz ./firmware/tasmota/
-        [ ! -f ./mv_firmware/firmware/tasmota-lite.* ] || mv ./mv_firmware/firmware/tasmota-lite.* ./firmware/tasmota/
         [ ! -f ./mv_firmware/firmware/tasmota-ir*.* ] || mv ./mv_firmware/firmware/tasmota-ir*.* ./firmware/tasmota/
         [ ! -f ./mv_firmware/firmware/tasmota-display.* ] || mv ./mv_firmware/firmware/tasmota-display.* ./firmware/tasmota/
         [ ! -f ./mv_firmware/firmware/tasmota-knx.* ] || mv ./mv_firmware/firmware/tasmota-knx.* ./firmware/tasmota/
